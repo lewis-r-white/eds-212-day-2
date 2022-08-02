@@ -53,7 +53,8 @@ eval(deriv_expression_3)
 
 ```{r}
 ggplot(data = penguins, aes(x = bill_length_mm, y = bill_depth_mm)) +
-  geom_point(aes(color = species)) +
+  geom_point(aes(color = species), size = 1) +
   labs (x = "bill length (mm)", y = "bill depth (mm)", title = "Bill length and depth of penguins")
 ```
+
 
