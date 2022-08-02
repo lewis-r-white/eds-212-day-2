@@ -55,7 +55,8 @@ eval(deriv_expression_3)
 ggplot(data = penguins, aes(x = bill_length_mm, y = bill_depth_mm)) +
   geom_point(aes(color = species), size = 1) +
   labs (x = "bill length (mm)", y = "bill depth (mm)", title = "Bill length and depth of penguins") + 
-  theme_bw()
+  theme(panel.background = element_blank(),
+        axis.line = element_line(colour = "steel blue"))
 ```
 
 
